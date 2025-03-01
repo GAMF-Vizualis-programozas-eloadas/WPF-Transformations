@@ -1,0 +1,28 @@
+﻿<Window x:Class="WPFTransformations.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFTransformations"
+        mc:Ignorable="d"
+        Title="WPF Transformations" Height="450" Width="800">
+	<DockPanel>
+		<ToolBar DockPanel.Dock="Top">
+			<Button Content="TranslateTransform" Name="btTranslateTransform" Click="btTranslateTransform_Click"/>
+			<Button Content="RotateTransform" Name="btRotateTransform" Click="btRotateTransform_Click" />
+			<Button Content="ScaleTransform" Name="btScaleTransform" Click="btScaleTransform_Click" />
+			<Button Content="SkewTransform" Name="btSkewTransform" Click="btSkewTransform_Click" />
+			<Button Content="MatrixTransform" Name="btMatrixTransform" Click="btMatrixTransform_Click" />
+			<Button Content="Tükröz f" Name="btTükrözF" Click="btTükrözF_Click" />
+			<Button Content="Tükröz v" Name="btTükrözV" Click="btTükrözV_Click" />
+			<Button Content="Eredeti" Name="btEredeti" Click="btEredeti_Click" />
+		</ToolBar>
+		<Canvas DockPanel.Dock="Top">
+			<Button Name="btGomb" Content="Gomb" 
+							FontSize="20"
+							Width="116" Height="43" Canvas.Left="268" 
+							Canvas.Top="118"/>
+		</Canvas>
+	</DockPanel>
+
+</Window>
